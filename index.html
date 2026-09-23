@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="dist/aos.css" rel="stylesheet">
+    <link href="dist/swiper.css" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden">
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <img src="icon/logo04.png" alt="" class="img-fluid">
+    </div>
+    <script>
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          document.getElementById('preloader').classList.add('hide');
+        }, 1500);
+      });
+    </script>
+    <!-- Navbar -->
+    <div class="navbar fixed-top bg-transparent">
+        <div class="container-fluid px-5">
+                <a href="#" class="navbar-brand"><img src="icon/logo04.png" alt="" class="w-100 object-fit-cover img-fluid img"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"><span class="navbar-toggler-icon"></span></button>
+                <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex">
+                        <ul>
+                            <li><a href="index.html" class="nav-link active">Home (صفحه اصلی)</a></li>
+                            <li><a href="pages/projects.html?category=project" class="nav-link">Projects (پروژه‌ها)</a></li>
+                            <li><a href="pages/about.html" class="nav-link">AboutUs (درباره ما)</a></li>
+                            <li><a href="pages/contactus.html" class="nav-link">ContactUs (تماس باما)</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+    <!-- headerIMG -->
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>We Are Ready For<br><span>YOUR PROJECTS.</span></h1><hr>
+        </div>
+    </section>
+
+
+    <!-- Aboutus -->
+    <div class="container aboutus position-relative">
+        <div class="mainabout" data-aos="fade-up" data-aos-duration="2000">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                  <div class="headabout">
+                    <p class="lead text-white">Ceil <span class="px-4">Architecture</span></p>
+                  </div>
+                  <div class="language-switcher mb-3 mb-md-0">
+                      <a href="#" id="enBtn" class="lang-link active">EN</a>
+                      <span>|</span>
+                      <a href="#" id="faBtn" class="lang-link">فارسی</a>
+                  </div>
+                </div>
+                <div id="englishContent" class="language-content">
+                    <h3>About Us</h3>
+                    <p>
+                        Architecture blends creativity, engineering and human experience
+                        through thoughtful design that shapes cities and communities while
+                        balancing beauty, function, sustainability, culture and innovation.
+                    </p>
+                    <a href="pages/about.html" class="about-btn">
+                        <span style="font-size: large;">EXPLORE ABOUT US</span>
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+                <div id="persianContent" class="language-content d-none" dir="rtl">
+                    <h3>درباره ما</h3>
+                    <p>
+                        معماری تلفیقی از خلاقیت، مهندسی و تجربه انسانی است؛
+                        طراحی آگاهانه‌ای که شهرها و جوامع را شکل می‌دهد و میان
+                        زیبایی، عملکرد، پایداری، فرهنگ و نوآوری تعادل ایجاد می‌کند.
+                    </p>
+                    <a href="pages/about.html" class="about-btn">
+                        <span style="font-size: large;">بیشتر درباره ما</span>
+                        <span class="arrow">←</span>
+                    </a>
+                </div>
+        </div>
+        <div class="imgab mt-5 d-flex flex-row justify-content-between align-items-center" data-aos="fade-right" data-aos-duration="2000">
+            <div class="logobrand">
+                <img src="icon/hanglogo.png" alt="" class="w-100 img object-fit-cover">
+            </div>
+            <div class="imageabout">
+                <img src="img/ab2.jpg" alt="" class="w-100 img object-fit-cover">
+            </div>
+        </div>
+    </div>
+    
+    <!-- projects -->
+     <div class="container mt-4">
+        <div class="mainabout" data-aos="fade-up" data-aos-duration="2000">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                  <div class="headabout">
+                    <p class="lead text-white">Projects</p>
+                  </div>
+                  <div class="language-switcher mb-3 mb-md-0">
+                      <a href="#" id="enBtnn" class="lang-link active">EN</a>
+                      <span>|</span>
+                      <a href="#" id="faBtnn" class="lang-link">فارسی</a>
+                  </div>
+                </div>
+                <div id="englishContentt" class="language-content">
+                    <h3>Our Projects</h3>
+                    <p>
+                        Architecture blends creativity, engineering and human experience
+                        through thoughtful design that shapes cities and communities while
+                        balancing beauty, function, sustainability, culture and innovation.
+                    </p>
+                    <a href="pages/projects.html?category=project" class="about-btn">
+                        <span style="font-size: large;">EXPLORE PROJECTS US</span>
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+                <div id="persianContentt" class="language-content d-none" dir="rtl">
+                    <h3>پروژه ما</h3>
+                    <p>
+                        معماری تلفیقی از خلاقیت، مهندسی و تجربه انسانی است؛
+                        طراحی آگاهانه‌ای که شهرها و جوامع را شکل می‌دهد و میان
+                        زیبایی، عملکرد، پایداری، فرهنگ و نوآوری تعادل ایجاد می‌کند.
+                    </p>
+                    <a href="pages/projects.html?category=project" class="about-btn">
+                        <span style="font-size: large;">بیشتر درباره پروژه ما</span>
+                        <span class="arrow">←</span>
+                    </a>
+                </div>
+        </div>
+     </div>
+    <div class="container-fluid p-0 mt-5">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/ab2.jpg" class="img-fluid"></div>
+          <div class="swiper-slide"><img src="img/ab2.jpg" class="img-fluid"></div>
+          <div class="swiper-slide"><img src="img/ab2.jpg" class="img-fluid"></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- Services -->
+     <div class="container services mt-5" data-aos="fade-up" data-aos-duration="2000">
+                <div class="mainabout" data-aos="fade-up" data-aos-duration="2000">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                  <div class="headabout">
+                    <p class="lead text-white">SERVICES</p>
+                  </div>
+                  <div class="language-switcher mb-3 mb-md-0">
+                      <a href="#" id="enBtnnn" class="lang-link active">EN</a>
+                      <span>|</span>
+                      <a href="#" id="faBtnnn" class="lang-link">فارسی</a>
+                  </div>
+                </div>
+                <div id="englishContenttt" class="language-content">
+                    <h3>Our Services</h3>
+                    <p>
+                        Architecture blends creativity, engineering and human experience
+                        through thoughtful design that shapes cities and communities while
+                        balancing beauty, function, sustainability, culture and innovation.
+                    </p>
+                    <a href="pages/all_cat.html" class="about-btn">
+                        <span style="font-size: large;">EXPLORE SERVICES US</span>
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+                <div id="persianContenttt" class="language-content d-none" dir="rtl">
+                    <h3>پروژه ما</h3>
+                    <p>
+                        معماری تلفیقی از خلاقیت، مهندسی و تجربه انسانی است؛
+                        طراحی آگاهانه‌ای که شهرها و جوامع را شکل می‌دهد و میان
+                        زیبایی، عملکرد، پایداری، فرهنگ و نوآوری تعادل ایجاد می‌کند.
+                    </p>
+                    <a href="pages/all_cat.html" class="about-btn">
+                        <span style="font-size: large;">بیشتر درباره پروژه ما</span>
+                        <span class="arrow">←</span>
+                    </a>
+                </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-6 p-0 serviclink sl1 position-relative" style="overflow: hidden;">
+          <a href="pages/interior_cat.html"><img src="img/ab2.jpg" alt="" class="object-fit-cover w-100 img-fluid"></a>
+          <div class="servicecontent sc1 w-100 position-absolute">
+            <p class="text-white">Interior Design</p>
+            <p class="text-white">دکوراسیون داخلی</p>
+          </div>
+        </div>
+        
+        <div class="col-6 p-0 serviclink sl3 position-relative" style="overflow: hidden;">
+          <a href="pages/exterior_cat.html"><img src="img/ab2.jpg" alt="" class="object-fit-cover w-100 img-fluid"></a>
+          <div class="servicecontent sc3 w-100 position-absolute">
+            <p class="text-white">Facade Design</p>
+            <p class="text-white">طراحی‌های نما</p>
+          </div>
+        </div>
+        <div class="col-12 p-0 serviclink sl3 position-relative" style="overflow: hidden;">
+          <a href="pages/projects.html?category=plan"><img src="img/ab2.jpg" alt="" class="object-fit-cover w-100 img-fluid" style="height: 220px !important;"></a>
+          <div class="servicecontent sc3 w-100 position-absolute">
+            <p class="text-white">Plan Design</p>
+            <p class="text-white">طراحی‌های پلان</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+     <div class="container-fluid mt-4 footer">
+          <div class="container">
+            <div class="row justify-content-between align-items-center">
+              <div class="d-flex flex-column gap-2 col-12 col-md-6">
+              <div class="p1footer">
+                <p>Feel Free To Contact Us</p>
+              </div>
+              <div class="p2footer">
+                <p>Phone: 09121762187</p>
+              </div>
+              <div class="p3footer">
+                <p>Email: mmr@gmail.com</p>
+              </div>
+              <div class="p4footer">
+                <p>Address: Tehran, Square</p>
+              </div>
+              </div>
+              <div class="footerright row flex-column justify-content-end gap-2 col-12 col-md-6">
+                <div class="p5footer">
+                  <p>Follow us on Social Media:</p>
+                  <p class="text-white-50">ما را در صفحات اجتماعی دنبال کنید</p>
+                </div>
+                <div class="iconfooters d-flex justify-content-end gap-4">
+                  <img src="icon/instagram2.png" alt="" class="img-fluid object-fit-cover">
+                  <img src="icon/telegram.png" alt="" class="img-fluid object-fit-cover">
+                  <img src="icon/Bale_logo.png" alt="" class="img-fluid object-fit-cover">
+                  <img src="icon/whatsapp.png" alt="" class="img-fluid object-fit-cover">
+                </div>
+              </div>
+            </div>
+          </div>
+     </div>
+
+     <script type="module" src="./script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="dist/aos.js"></script>
+    <script src="dist/swiper.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      const enBtn = document.getElementById("enBtn");
+      const enBtnn = document.getElementById("enBtnn");
+      const enBtnnn = document.getElementById("enBtnnn");
+      const faBtn = document.getElementById("faBtn");   
+      const faBtnn = document.getElementById("faBtnn");   
+      const faBtnnn = document.getElementById("faBtnnn");   
+      const englishContent = document.getElementById("englishContent");
+      const englishContentt = document.getElementById("englishContentt");
+      const englishContenttt = document.getElementById("englishContenttt");
+      const persianContent = document.getElementById("persianContent");
+      const persianContentt = document.getElementById("persianContentt");
+      const persianContenttt = document.getElementById("persianContenttt");
+      enBtn.addEventListener("click", function(e) {
+          e.preventDefault();
+          englishContent.classList.remove("d-none");
+          persianContent.classList.add("d-none");
+          enBtn.classList.add("active");
+          faBtn.classList.remove("active");
+      });
+      enBtnn.addEventListener("click", function(e) {
+          e.preventDefault();
+          englishContentt.classList.remove("d-none");
+          persianContentt.classList.add("d-none");
+          enBtnn.classList.add("active");
+          faBtnn.classList.remove("active");
+      });
+      enBtnnn.addEventListener("click", function(e) {
+          e.preventDefault();
+          englishContenttt.classList.remove("d-none");
+          persianContenttt.classList.add("d-none");
+          enBtnnn.classList.add("active");
+          faBtnnn.classList.remove("active");
+      });
+      faBtn.addEventListener("click", function(e) {
+          e.preventDefault();
+          persianContent.classList.remove("d-none");
+          englishContent.classList.add("d-none");
+          faBtn.classList.add("active");
+          enBtn.classList.remove("active");
+      });
+      faBtnn.addEventListener("click", function(e) {
+          e.preventDefault();
+          persianContentt.classList.remove("d-none");
+          englishContentt.classList.add("d-none");
+          faBtnn.classList.add("active");
+          enBtnn.classList.remove("active");
+      });
+      faBtnnn.addEventListener("click", function(e) {
+          e.preventDefault();
+          persianContenttt.classList.remove("d-none");
+          englishContenttt.classList.add("d-none");
+          faBtnnn.classList.add("active");
+          enBtnnn.classList.remove("active");
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1.5,
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+         pagination: {
+          el: ".swiper-pagination",
+          type: "fraction", // اینجا نوع pagination رو "fraction" قرار بده
+          clickable: true, // برای اینکه بتونی با کلیک روی عددها هم اسلاید عوض کنی
+        },
+      });
+    </script>
+</body>
+</html>

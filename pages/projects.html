@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <img src="../icon/logo04.png" alt="" class="img-fluid">
+    </div>
+    <script>
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          document.getElementById('preloader').classList.add('hide');
+        }, 1500);
+      });
+    </script>
+    <!-- Navbar -->
+    <div class="navbar fixed-top bg-transparent">
+        <div class="container-fluid px-5">
+                <a href="#" class="navbar-brand"><img src="../icon/logo04.png" alt="" class="w-100 object-fit-cover img-fluid img"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"><span class="navbar-toggler-icon"></span></button>
+                <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex">
+                        <ul>
+                            <li><a href="../index.html" class="nav-link active">Home (صفحه اصلی)</a></li>
+                            <li><a href="projects.html?category=project" class="nav-link">Projects (پروژه‌ها)</a></li>
+                            <li><a href="about.html" class="nav-link">AboutUs (درباره ما)</a></li>
+                            <li><a href="contactus.html" class="nav-link">ContactUs (تماس باما)</a></li>
+                       </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- projects cards-->
+     <div class="container cards">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="projects-grid">
+        </div>
+     </div>
+
+
+     <script type="module" src="../script.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

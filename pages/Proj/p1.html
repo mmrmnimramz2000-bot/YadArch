@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <img src="../../icon/logo04.png" alt="" class="img-fluid">
+    </div>
+    <script>
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          document.getElementById('preloader').classList.add('hide');
+        }, 1500);
+      });
+    </script>
+    <!-- Navbar -->
+    <div class="navbar fixed-top bg-transparent">
+        <div class="container-fluid px-5">
+                <a href="#" class="navbar-brand"><img src="../../icon/logo04.png" alt="" class="w-100 object-fit-cover img-fluid img"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"><span class="navbar-toggler-icon"></span></button>
+                <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex">
+                        <ul>
+                            <li><a href="../../index.html" class="nav-link active">Home (صفحه اصلی)</a></li>
+                            <li><a href="../projects.html" class="nav-link">Projects (پروژه‌ها)</a></li>
+                            <li><a href="../about.html" class="nav-link">AboutUs (درباره ما)</a></li>
+                            <li><a href="../contactus.html" class="nav-link">ContactUs (تماس باما)</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- Residential -->
+    <div class="container cards">
+        <div class="res_head">
+            <h3 class="text-white">Residential House</h3>
+        </div>
+        <div class="res_image mt-5">
+            <img src="../../img/ab2.jpg" alt="" class="img-fluid w-100 object-fit-cover">
+        </div>
+        <div class="res_desc mt-5">
+            <h5 class="text-white mb-5">...... House</h5>
+            <p class="text-white-50 arch">Architects: Hardel Le Bihan Architectes</p>
+            <p class="text-white-50 area">Area:  120000 m²</p>
+            <p class="text-white-50 year">Year:  2024 </p>
+            <p class="text-white-50 city">City: Dakar</p>
+            <p class="text-white-50 cat">Category: Residential</p>
+        </div>
+    </div>
+    <!-- Res_photos -->
+     <div class="container mt-4">
+        <div class="row row-cols-lg-4 row-cols-3 row-cols-2 g-4">
+            <div class="res_photo">
+                <img src="../../img/ab2.jpg" alt="" class="w-100 object-fit-cover">
+            </div>
+            <div class="res_photo">
+                <img src="../../img/ab2.jpg" alt="" class="w-100 object-fit-cover">
+            </div>
+            <div class="res_photo">
+                <img src="../../img/ab2.jpg" alt="" class="w-100 object-fit-cover">
+            </div>
+            <div class="res_photo">
+                <img src="../../img/ab2.jpg" alt="" class="w-100 object-fit-cover">
+            </div>
+            <div class="res_photo">
+                <img src="../../img/ab2.jpg" alt="" class="w-100 object-fit-cover">
+            </div>
+            <div class="res_photo">
+                <img src="../../img/ab2.jpg" alt="" class="w-100 object-fit-cover">
+            </div>
+            <div class="res_photo">
+                <img src="../../img/ab2.jpg" alt="" class="w-100 object-fit-cover">
+            </div>
+            <div class="res_photo">
+                <img src="../../img/ab2.jpg" alt="" class="w-100 object-fit-cover">
+            </div>
+        </div>
+     </div>
+
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

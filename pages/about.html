@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <img src="../icon/logo04.png" alt="" class="img-fluid">
+    </div>
+    <script>
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          document.getElementById('preloader').classList.add('hide');
+        }, 1500);
+      });
+    </script>
+    <!-- Navbar -->
+    <div class="navbar fixed-top bg-transparent">
+        <div class="container-fluid px-5">
+                <a href="#" class="navbar-brand"><img src="../icon/logo04.png" alt="" class="w-100 object-fit-cover img-fluid img"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"><span class="navbar-toggler-icon"></span></button>
+                <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex">
+                        <ul>
+                            <li><a href="../index.html" class="nav-link active">Home (صفحه اصلی)</a></li>
+                            <li><a href="projects.html?category=project" class="nav-link">Projects (پروژه‌ها)</a></li>
+                            <li><a href="about.html" class="nav-link">AboutUs (درباره ما)</a></li>
+                            <li><a href="contactus.html" class="nav-link">ContactUs (تماس باما)</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- AboutContent -->
+     <div class="container aboutC">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="abcleft">
+                        <div class="aboutCH">
+                        <h2 class="text-white">About Us</h2>
+                        </div>
+                        <div class="aboutCH2 my-5">
+                            <h4 class="text-warning">Ceil Architects</h4>
+                        </div>
+                    </div>
+                    <div class="abcright">
+                        <div class="language-switcher">
+                              <a href="#" id="enBtnnn" class="lang-link active">EN</a>
+                              <span>|</span>
+                              <a href="#" id="faBtnnn" class="lang-link">FA</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div id="englishContenttt" class="language-content">
+                    <p>
+                        Architecture blends creativity, engineering and human experience
+                        through thoughtful design that shapes cities and communities while
+                        balancing beauty, function, sustainability, culture and innovation.
+                        Architecture blends creativity, engineering and human experience
+                        through thoughtful design that shapes cities and communities while
+                        balancing beauty, function, sustainability, culture and innovation.
+                    </p>
+                </div>
+                <div id="persianContenttt" class="language-content d-none" dir="rtl">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد مورد استفاده قرار گیرد.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="aboutCI d-flex justify-content-center">
+                    <img src="../icon/hanglogo.png" alt="" class="aboutCII w-75 object-fit-cover img-fluid">
+                </div>
+            </div>
+        </div>
+     </div>
+     
+      <!-- Aboutperson -->
+      <div class="container aboutP position-relative">
+        <div class="APImage position-absolute">
+
+        </div>
+        <div class="d-flex flex-column gap-2 justify-content-center">
+            <div class="abcright">
+                <div class="language-switcher mb-4 justify-content-center">
+                      <a href="#" id="enBtnn" class="lang-link active">EN</a>
+                      <span>|</span>
+                      <a href="#" id="faBtnn" class="lang-link">FA</a>
+                </div>
+                <div id="englishContentt" class="language-content">
+                    <h4 class="text-warning">Mohammad Bagheri</h4>
+                    <p>
+                        Architecture blends creativity, engineering and human experience
+                        through thoughtful design that shapes cities and communities while
+                        balancing beauty, function, sustainability, culture and innovation.
+                        Architecture blends creativity, engineering and human experience
+                        through thoughtful design that shapes cities and communities
+                    </p>
+                </div>
+                <div id="persianContentt" class="language-content d-none" dir="rtl">
+                    <h4 class="text-warning">محمد باقری</h4>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، پایان رسد مورد استفاده قرار گیرد.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- Footer -->
+     <div class="container-fluid mt-4 footer">
+          <div class="container">
+            <div class="row justify-content-between align-items-center">
+              <div class="d-flex flex-column gap-2 col-12 col-md-6">
+              <div class="p1footer">
+                <p>Feel Free To Contact Us</p>
+              </div>
+              <div class="p2footer">
+                <p>Phone: 09121762187</p>
+              </div>
+              <div class="p3footer">
+                <p>Email: mmr@gmail.com</p>
+              </div>
+              <div class="p4footer">
+                <p>Address: Tehran, Square</p>
+              </div>
+              </div>
+              <div class="footerright row flex-column justify-content-end gap-2 col-12 col-md-6">
+                <div class="p5footer">
+                  <p>Follow us on Social Media:</p>
+                  <p class="text-white-50">ما را در صفحات اجتماعی دنبال کنید</p>
+                </div>
+                <div class="iconfooters d-flex justify-content-end gap-4">
+                  <img src="../icon/instagram2.png" alt="" class="img-fluid object-fit-cover">
+                  <img src="../icon/telegram.png" alt="" class="img-fluid object-fit-cover">
+                  <img src="../icon/Bale_logo.png" alt="" class="img-fluid object-fit-cover">
+                  <img src="../icon/whatsapp.png" alt="" class="img-fluid object-fit-cover">
+                </div>
+              </div>
+            </div>
+          </div>
+     </div>
+
+     <script type="module" src="../script.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+      const persianContenttt = document.getElementById("persianContenttt");
+      const persianContentt = document.getElementById("persianContentt");
+      const englishContenttt = document.getElementById("englishContenttt");
+      const englishContentt = document.getElementById("englishContentt");
+      const faBtnnn = document.getElementById("faBtnnn");   
+      const faBtnn = document.getElementById("faBtnn");   
+      const enBtnnn = document.getElementById("enBtnnn");
+      const enBtnn = document.getElementById("enBtnn");
+      enBtnn.addEventListener("click", function(e) {
+          e.preventDefault();
+          englishContentt.classList.remove("d-none");
+          persianContentt.classList.add("d-none");
+          enBtnn.classList.add("active");
+          faBtnn.classList.remove("active");
+      });
+        faBtnn.addEventListener("click", function(e) {
+          e.preventDefault();
+          persianContentt.classList.remove("d-none");
+          englishContentt.classList.add("d-none");
+          faBtnn.classList.add("active");
+          enBtnn.classList.remove("active");
+      });
+        enBtnnn.addEventListener("click", function(e) {
+          e.preventDefault();
+          englishContenttt.classList.remove("d-none");
+          persianContenttt.classList.add("d-none");
+          enBtnnn.classList.add("active");
+          faBtnnn.classList.remove("active");
+      });
+        faBtnnn.addEventListener("click", function(e) {
+          e.preventDefault();
+          persianContenttt.classList.remove("d-none");
+          englishContenttt.classList.add("d-none");
+          faBtnnn.classList.add("active");
+          enBtnnn.classList.remove("active");
+      });
+    </script>
+</body>
+</html>

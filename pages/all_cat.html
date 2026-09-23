@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        @media (max-width: 768px) {
+          .row {
+            height: 50% !important;
+          }
+        }
+        .intpre1 img:hover{
+            filter: blur(0) brightness(1) !important;
+        }
+        .intpre1{
+            overflow: hidden;
+        }
+        .intpre2{
+            overflow: hidden;
+        }
+        .intpre3{
+            overflow: hidden;
+        }
+        .intpre4{
+            overflow: hidden;
+        }
+        .intpre2 img:hover{
+            filter: blur(0) brightness(1) !important;
+        }
+        .intpre3 img:hover{
+            filter: blur(0) brightness(1) !important;
+        }
+        .intpre4 img:hover{
+            filter: blur(0) brightness(1) !important;
+        }
+        .intextcontent{
+            text-align: center;
+        }
+        .intextcontent p{
+            transition: all .5s;
+        }
+        .intpre1:hover p{
+            transform: scale(1.5);
+            background-color: black;
+        }
+        .intpre2:hover p{
+            transform: scale(1.5);
+            background-color: black;
+        }
+        .intpre3:hover p{
+            transform: scale(1.5);
+            background-color: black;
+        }
+        .intpre4:hover p{
+            transform: scale(1.5);
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <img src="../icon/logo04.png" alt="" class="img-fluid">
+    </div>
+    <script>
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          document.getElementById('preloader').classList.add('hide');
+        }, 1500);
+      });
+    </script>
+    <!-- Navbar -->
+    <div class="navbar fixed-top bg-transparent">
+        <div class="container-fluid px-5">
+                <a href="#" class="navbar-brand"><img src="../icon/logo04.png" alt="" class="w-100 object-fit-cover img-fluid img"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"><span class="navbar-toggler-icon"></span></button>
+                <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex">
+                        <ul>
+                            <li><a href="../index.html" class="nav-link active">Home (صفحه اصلی)</a></li>
+                            <li><a href="projects.html?category=project" class="nav-link">Projects (پروژه‌ها)</a></li>
+                            <li><a href="about.html" class="nav-link">AboutUs (درباره ما)</a></li>
+                            <li><a href="contactus.html" class="nav-link">ContactUs (تماس باما)</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- preview -->
+     
+    <div class="container" style="height:100vh;">
+        <div class="row h-100 gap-4 gap-md-0">
+            <div class="col-12 col-md-6 position-relative h-100 intpre1">
+                <a href="exterior_cat.html"><img src="../img/ab2.jpg" alt="" class="object-fit-cover w-100 img-fluid h-100" style="filter: blur(2px) brightness(.55);transition: all .5s;"></a>
+                <div class="intextcontent w-100 position-absolute" style="bottom: 5%; right: 50%; transform: translateX(50%);">
+                    <p class="text-white p-3">Facade Design</p>
+                    <p class="text-white p-3">طراحی‌های نما</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 position-relative h-100 intpre2">
+                <a href="interior_cat.html"><img src="../img/ab2.jpg" alt="" class="object-fit-cover w-100 img-fluid h-100" style="filter: blur(2px) brightness(.55);transition: all .5s;"></a>
+                <div class="intextcontent w-100 position-absolute" style="bottom: 5%; right: 50%; transform: translateX(50%);">
+                    <p class="text-white p-3">Interior Design</p>
+                    <p class="text-white p-3">دکوراسیون داخلی</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <script type="module" src="../script.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>

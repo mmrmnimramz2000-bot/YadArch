@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .pcontactus p{
+            text-align: center;
+        }
+        .contactC{
+            margin-top: 180px;
+        }
+        .iconfooters img{
+            transition: all .5s;
+            filter: invert(0);
+        }
+        .iconfooters img:hover{
+            transform: scale(1.2);
+        }
+        .aboutCH h2{
+            text-align: center;
+            color: orange !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <img src="../icon/logo04.png" alt="" class="img-fluid">
+    </div>
+    <script>
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          document.getElementById('preloader').classList.add('hide');
+        }, 1500);
+      });
+    </script>
+    <!-- Navbar -->
+    <div class="navbar fixed-top bg-transparent">
+        <div class="container-fluid px-5">
+                <a href="#" class="navbar-brand"><img src="../icon/logo04.png" alt="" class="w-100 object-fit-cover img-fluid img"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"><span class="navbar-toggler-icon"></span></button>
+                <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex">
+                        <ul>
+                            <li><a href="../index.html" class="nav-link active">Home (صفحه اصلی)</a></li>
+                            <li><a href="projects.html?category=project" class="nav-link">Projects (پروژه‌ها)</a></li>
+                            <li><a href="about.html" class="nav-link">AboutUs (درباره ما)</a></li>
+                            <li><a href="contactus.html" class="nav-link">ContactUs (تماس باما)</a></li>
+                       </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+        <!-- ContactUs -->
+      <div class="container contactC">
+        <div class="row">
+            <div class="aboutCH">
+                <h2 class="text-white">Contact Us</h2>
+            </div>
+            <div class="row mt-3 justify-content-center align-items-center row-cols-1 row-cols-lg-4">
+                <div class="phoneCon">
+                    <p class="phoneP text-white">Phone: 0912........</p>
+                </div>
+                <div class="emailCon">
+                    <p class="emailP text-white">Email: mm@gmail.com</p>
+                </div>
+                <div class="insta">
+                    <p class="instaP text-white text-decoration-none" href="">address: ..................</p>
+                </div>
+                <div class="telegram">
+                    <p class="telegramP text-white text-decoration-none" href="">Telegram: ..................</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center gap-3 flex-column mt-4">
+                <div class="pcontactus">
+                      <p class="text-white">Follow us on Social Media:</p>
+                      <p class="text-white-50">ما را در صفحات اجتماعی دنبال کنید</p>
+                    </div>
+                <div class="iconfooters d-flex justify-content-center gap-4">
+                      <img src="../icon/insta.png" alt="" class="img-fluid object-fit-cover">
+                      <img src="../icon/tele.png" alt="" class="img-fluid object-fit-cover">
+                      <img src="../icon/Bale_logo2.png" alt="" class="img-fluid object-fit-cover">
+                      <img src="../icon/whats.png" alt="" class="img-fluid object-fit-cover">
+                </div>
+            </div>
+        </div>
+      </div>
+     
+
+
+
+     <script type="module" src="../script.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
