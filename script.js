@@ -1,26 +1,26 @@
-import { createClient } from 'https://esm.sh/@sanity/client';
-
-const client = createClient({
-    projectId: 'opobfr0n',
-    dataset: 'production',
-    useCdn: true,
-    apiVersion: '2023-05-03',
-});
+console.log("SCRIPT.JS LOADED");
 
 async function fetchAndDisplayProjects() {
 
+    console.log("FETCH FUNCTION STARTED");
+
     const grid = document.getElementById('projects-grid');
 
-    if (!grid) return;
+    if (!grid) {
+        console.log("GRID NOT FOUND");
+        return;
+    }
 
-    grid.innerHTML = `
-        <div class="col-12 text-center">
-            <p>در حال بارگذاری...</p>
-        </div>
-    `;
-
+    // گرفتن category از URL
     const urlParams = new URLSearchParams(window.location.search);
     const categoryFromUrl = urlParams.get('category');
+
+    console.log("CATEGORY FROM URL:", categoryFromUrl);
+
+
+    // =========================
+    // ساخت Query
+    // =========================
 
     let query = `*[_type == "project"`;
 
@@ -32,33 +32,91 @@ async function fetchAndDisplayProjects() {
         title,
         "slug": slug.current,
         "imageUrl": mainImage.asset->url,
-        "categoryName": category->title
+        "categoryName": category->title,
+        "categorySlug": category->slug.current
     }`;
+
+
+    console.log("QUERY:", query);
+
 
     try {
 
-        const projects = await client.fetch(query);
+        grid.innerHTML = `
+            <div class="col-12 text-center">
+                <p>در حال بارگذاری...</p>
+            </div>
+        `;
+
+
+        // =========================
+        // Sanity API
+        // =========================
+
+        const apiUrl =
+            'https://opobfr0n.api.sanity.io/v2023-05-03/data/query/production?query='
+            + encodeURIComponent(query);
+
+
+        console.log("API URL:", apiUrl);
+
+
+        const response = await fetch(apiUrl);
+
+
+        if (!response.ok) {
+            throw new Error(`HTTP ERROR: ${response.status}`);
+        }
+
+
+        const data = await response.json();
+
+
+        console.log("SANITY DATA:", data);
+
+
+        const projects = data.result;
+
+
+        console.log("PROJECTS:", projects);
+        console.log("PROJECTS LENGTH:", projects.length);
+
+
+        // =========================
+        // اگر پروژه‌ای پیدا نشد
+        // =========================
 
         if (projects.length === 0) {
 
             grid.innerHTML = `
                 <div class="col-12 text-center">
-                    <p>پروژه‌ای یافت نشد.</p>
+                    <p>پروژه‌ای در این دسته‌بندی یافت نشد.</p>
                 </div>
             `;
 
             return;
         }
 
+
+        // =========================
+        // نمایش پروژه‌ها
+        // =========================
+
         grid.innerHTML = '';
 
+
         projects.forEach(project => {
+
+            console.log("CREATING CARD:", project);
+
 
             const projectCard = `
                 <div class="col">
 
-                    <a class="card h-100"
-                       href="Proj/${project.slug}.html">
+                    <a
+                        href="Proj/${project.slug}.html"
+                        class="card h-100 text-decoration-none"
+                    >
 
                         <img
                             src="${project.imageUrl}"
@@ -83,20 +141,31 @@ async function fetchAndDisplayProjects() {
                 </div>
             `;
 
+
             grid.innerHTML += projectCard;
+
         });
 
-    } catch (error) {
 
-        console.error("Error fetching projects:", error);
+        console.log("CARDS CREATED");
+
+    }
+
+    catch (error) {
+
+        console.error("SANITY ERROR:", error);
+
 
         grid.innerHTML = `
             <div class="col-12 text-center">
                 <p>خطا در بارگذاری داده‌ها.</p>
             </div>
         `;
+
     }
+
 }
+
 
 document.addEventListener(
     'DOMContentLoaded',
