@@ -114,7 +114,7 @@ async function fetchAndDisplayProjects() {
                 <div class="col">
 
                     <a
-                        href="Proj/${project.slug}.html"
+                        href="Proj/project.html?slug=${project.slug}"
                         class="card h-100 text-decoration-none"
                     >
 

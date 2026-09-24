@@ -12,20 +12,25 @@
 <body class="overflow-x-hidden">
     <!-- Preloader -->
     <div class="preloader" id="preloader">
-      <img src="icon/logo04.png" alt="" class="img-fluid">
+      <img src="icon/logo05.png" alt="" class="img-fluid">
     </div>
     <script>
       window.addEventListener('load', () => {
         setTimeout(() => {
           document.getElementById('preloader').classList.add('hide');
-        }, 1500);
+        }, 2500);
       });
     </script>
     <!-- Navbar -->
     <div class="navbar fixed-top bg-transparent">
         <div class="container-fluid px-5">
                 <a href="#" class="navbar-brand"><img src="icon/logo04.png" alt="" class="w-100 object-fit-cover img-fluid img"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"><span class="navbar-toggler-icon"></span></button>
+                <div class="language-switcher me-auto mb-3 mb-md-0">
+                      <a href="#" id="enBtnm" class="lang-link active">EN</a>
+                      <span>|</span>
+                      <a href="#" id="faBtnm" class="lang-link">فارسی</a>
+                </div>
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"><span class="navbar-toggler-icon"></span></button>
                 <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                     <div class="offcanvas-header">
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -261,9 +266,11 @@
     </script>
     <script>
       const enBtn = document.getElementById("enBtn");
+      const enBtnm = document.getElementById("enBtnm");
       const enBtnn = document.getElementById("enBtnn");
       const enBtnnn = document.getElementById("enBtnnn");
       const faBtn = document.getElementById("faBtn");   
+      const faBtnm = document.getElementById("faBtnm");   
       const faBtnn = document.getElementById("faBtnn");   
       const faBtnnn = document.getElementById("faBtnnn");   
       const englishContent = document.getElementById("englishContent");
@@ -278,6 +285,23 @@
           persianContent.classList.add("d-none");
           enBtn.classList.add("active");
           faBtn.classList.remove("active");
+      });
+      enBtnm.addEventListener("click", function(e) {
+          e.preventDefault();
+          englishContent.classList.remove("d-none");
+          persianContent.classList.add("d-none");
+          enBtn.classList.add("active");
+          enBtnm.classList.add("active");
+          faBtn.classList.remove("active");
+          faBtnm.classList.remove("active");
+          englishContentt.classList.remove("d-none");
+          persianContentt.classList.add("d-none");
+          enBtnn.classList.add("active");
+          faBtnn.classList.remove("active");
+          englishContenttt.classList.remove("d-none");
+          persianContenttt.classList.add("d-none");
+          enBtnnn.classList.add("active");
+          faBtnnn.classList.remove("active");
       });
       enBtnn.addEventListener("click", function(e) {
           e.preventDefault();
@@ -299,6 +323,23 @@
           englishContent.classList.add("d-none");
           faBtn.classList.add("active");
           enBtn.classList.remove("active");
+      });
+      faBtnm.addEventListener("click", function(e) {
+          e.preventDefault();
+          persianContent.classList.remove("d-none");
+          englishContent.classList.add("d-none");
+          faBtn.classList.add("active");
+          faBtnm.classList.add("active");
+          enBtn.classList.remove("active");
+          enBtnm.classList.remove("active");
+          persianContentt.classList.remove("d-none");
+          englishContentt.classList.add("d-none");
+          faBtnn.classList.add("active");
+          enBtnn.classList.remove("active");
+          persianContenttt.classList.remove("d-none");
+          englishContenttt.classList.add("d-none");
+          faBtnnn.classList.add("active");
+          enBtnnn.classList.remove("active");
       });
       faBtnn.addEventListener("click", function(e) {
           e.preventDefault();

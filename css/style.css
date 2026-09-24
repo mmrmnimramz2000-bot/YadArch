@@ -73,6 +73,15 @@ p, h1, h2, h3, h4, h5, h6, a{
     filter: invert(1);
     opacity: 1;
 }
+@media (min-width:770px) {
+  .navbar-toggler-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .navbar-brand img{
+    max-height: 130px;
+  }
+}
 .navbar-nav .nav-link {
     color: #fff !important;
 }
@@ -516,6 +525,7 @@ hr{
 }
 .card img{
   object-fit: cover;
+  object-position: right;
   height: 500px;
   filter: blur(2px) brightness(0.5);
   transition: filter 0.5s, transform 0.6s;
@@ -536,7 +546,8 @@ hr{
 }
 .res_desc h5{
   letter-spacing: 16px;
-  font-size: 30px;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: bolder;
 }
 .arch::before{
   content: '';
