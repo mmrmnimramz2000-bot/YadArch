@@ -49,7 +49,7 @@
      <div class="container-fluid mt-4 footer">
           <div class="container">
             <div class="row justify-content-between align-items-center">
-              <div class="d-flex flex-column gap-2 col-12 col-md-6">
+              <div class="d-flex flex-column gap-2 col-12 col-md-6 align-items-md-start align-items-center">
               <div class="p1footer">
                 <p>Feel Free To Contact Us</p>
               </div>
@@ -64,15 +64,35 @@
               </div>
               </div>
               <div class="footerright row flex-column justify-content-end gap-2 col-12 col-md-6">
-                <div class="p5footer">
+                <div class="p5footer d-md-block d-none">
                   <p>Follow us on Social Media:</p>
                   <p class="text-white-50">ما را در صفحات اجتماعی دنبال کنید</p>
                 </div>
-                <div class="iconfooters d-flex justify-content-end gap-4">
-                  <img src="../../icon/instagram2.png" alt="" class="img-fluid object-fit-cover">
-                  <img src="../../icon/telegram.png" alt="" class="img-fluid object-fit-cover">
-                  <img src="../../icon/Bale_logo.png" alt="" class="img-fluid object-fit-cover">
-                  <img src="../../icon/whatsapp.png" alt="" class="img-fluid object-fit-cover">
+                <div class="iconfooters d-flex justify-content-center justify-content-md-end gap-4">
+                  <img src="icon/instagram2.png" alt="" class="img-fluid object-fit-cover insta">
+                  <script>
+                    document.querySelector(".insta").addEventListener('click',function(){
+                      window.location.href="https://google.com";
+                    })
+                  </script>
+                  <img src="icon/telegram.png" alt="" class="img-fluid object-fit-cover tele">
+                  <script>
+                    document.querySelector(".tele").addEventListener('click',function(){
+                      window.location.href="https://google.com";
+                    })
+                  </script>
+                  <img src="icon/Bale_logo.png" alt="" class="img-fluid object-fit-cover bale">
+                  <script>
+                    document.querySelector(".bale").addEventListener('click',function(){
+                      window.location.href="https://google.com";
+                    })
+                  </script>
+                  <img src="icon/whatsapp.png" alt="" class="img-fluid object-fit-cover what">
+                  <script>
+                    document.querySelector(".what").addEventListener('click',function(){
+                      window.location.href="https://google.com";
+                    })
+                  </script>
                 </div>
               </div>
             </div>

@@ -52,7 +52,7 @@ p, h1, h2, h3, h4, h5, h6, a{
 }
 @media (max-width:600px) {
   .preloader img{
-    width: 150px;
+    width: 180px;
   }
 }
 @keyframes logoReveal{
@@ -515,6 +515,12 @@ hr{
   filter: invert(1);
   width: 6%;
   cursor: pointer;
+}
+@media (max-width:600px) {
+  .iconfooters img{
+     width: 10%;
+     margin-left: 13px;
+  }
 }
 .p5footer p{
   text-align: right;
