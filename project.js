@@ -13,6 +13,10 @@ console.log("PROJECT SLUG:", slug);
 
 async function loadProject() {
 
+    // ==========================================
+    // English Elements
+    // ==========================================
+
     const titleElement =
         document.getElementById('project-title');
 
@@ -42,6 +46,29 @@ async function loadProject() {
 
 
     // ==========================================
+    // Persian Elements
+    // ==========================================
+
+    const titleElementFa =
+        document.getElementById('project-titlee');
+
+    const roleElementFa =
+        document.getElementById('project-rolee');
+
+    const areaElementFa =
+        document.getElementById('project-areaa');
+
+    const yearElementFa =
+        document.getElementById('project-yearr');
+
+    const cityElementFa =
+        document.getElementById('project-cityy');
+
+    const categoryNameElementFa =
+        document.getElementById('project-category-namee');
+
+
+    // ==========================================
     // Check slug
     // ==========================================
 
@@ -49,6 +76,11 @@ async function loadProject() {
 
         titleElement.innerText =
             "Project not found";
+
+        if (titleElementFa) {
+            titleElementFa.innerText =
+                "پروژه پیدا نشد";
+        }
 
         return;
     }
@@ -145,12 +177,17 @@ async function loadProject() {
             titleElement.innerText =
                 "Project not found";
 
+            if (titleElementFa) {
+                titleElementFa.innerText =
+                    "پروژه پیدا نشد";
+            }
+
             return;
         }
 
 
         // ==========================================
-        // Project Information
+        // Project Information - English
         // ==========================================
 
         titleElement.innerText =
@@ -181,6 +218,36 @@ async function loadProject() {
 
         cityElement.innerText =
             project.city || '';
+
+
+        // ==========================================
+        // Project Information - Persian
+        // ==========================================
+
+        titleElementFa.innerText =
+            project.title || '';
+
+
+        roleElementFa.innerText =
+            project.role || '';
+
+
+        areaElementFa.innerText =
+            project.area
+                ? `${project.area} متر مربع`
+                : '';
+
+
+        yearElementFa.innerText =
+            project.year || '';
+
+
+        cityElementFa.innerText =
+            project.city || '';
+
+
+        categoryNameElementFa.innerText =
+            project.categoryName || '';
 
 
         // ==========================================
@@ -258,6 +325,12 @@ async function loadProject() {
 
         titleElement.innerText =
             "Error loading project";
+
+
+        if (titleElementFa) {
+            titleElementFa.innerText =
+                "خطا در بارگذاری پروژه";
+        }
 
     }
 
