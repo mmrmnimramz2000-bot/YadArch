@@ -54,8 +54,9 @@ async function fetchAndDisplayProjects() {
         // =========================
 
         const apiUrl =
-            'https://opobfr0n.api.sanity.io/v2023-05-03/data/query/production?query='
-            + encodeURIComponent(query);
+            `/api/projects${categoryFromUrl
+                ? `?category=${encodeURIComponent(categoryFromUrl)}`
+                : ''}`;
 
 
         console.log("API URL:", apiUrl);
@@ -75,7 +76,7 @@ async function fetchAndDisplayProjects() {
         console.log("SANITY DATA:", data);
 
 
-        const projects = data.result;
+        const projects = data.projects;
 
 
         console.log("PROJECTS:", projects);

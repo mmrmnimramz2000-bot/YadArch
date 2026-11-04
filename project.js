@@ -155,13 +155,8 @@ async function loadProject() {
 
         const data = await response.json();
 
-
-        console.log(
-            "SANITY PROJECT:",
-            data
-        );
-
-
+        console.log("PROJECT DATA:", data);
+            
         const project = data.project;
 
 
