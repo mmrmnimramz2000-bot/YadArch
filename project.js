@@ -126,8 +126,7 @@ async function loadProject() {
         // ==========================================
 
         const apiUrl =
-            'https://opobfr0n.api.sanity.io/v2023-05-03/data/query/production?query='
-            + encodeURIComponent(query);
+        `/api/projects?slug=${encodeURIComponent(slug)}`;
 
 
         // ==========================================
@@ -154,8 +153,7 @@ async function loadProject() {
         // JSON
         // ==========================================
 
-        const data =
-            await response.json();
+        const data = await response.json();
 
 
         console.log(
@@ -164,8 +162,7 @@ async function loadProject() {
         );
 
 
-        const project =
-            data.result;
+        const project = data.project;
 
 
         // ==========================================
